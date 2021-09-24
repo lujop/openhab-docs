@@ -50,7 +50,7 @@ These must be inside the XML escape sequence - eg.
     </parameter-group>
 
     <parameter name="String" type="{text|integer|decimal|boolean}" min="Decimal" max="Decimal" step="Decimal" pattern="String" required="{true|false}" readOnly="{true|false}" multiple="{true|false}" groupName="String" unit="A|cd|K|kg|m|mol|s|g|rad|sr|Hz|N|Pa|J|W|C|V|F|Ω|S|Wb|T|H|Cel|lm|lx|Bq|Gy|Sv|kat|m/s2|m2v|m3|kph|%|l|ms|min|h|d|week|y">
-      <context>{network-address|serial-port|password|password-create|color|date|datetime|email|month|week|dayOfWeek|time|tel|url|item|thing|group|tag|service|channel|rule|location}</context>
+      <context>{network-address|serial-port|password|password-create|color|date|datetime|email|month|week|dayOfWeek|time|tel|url|item|thing|group|tag|service|channel|rule|location|script}</context>
       <required>{true|false}</required>
       <default>String</default>
       <label>String</label>
@@ -132,6 +132,7 @@ The following contexts require a specific format of the content:
   <tr><td>channel</td><td>text</td><td>UID of a channel<br></td><td>custom input field</td></tr>
   <tr><td>rule</td><td>text</td><td>UID of a rule<br></td><td>custom input field</td></tr>
   <tr><td>location</td><td>text</td><td>latitude,longitude[,altitude]<br></td><td>custom input field</td></tr>
+  <tr><td>script</td><td>text</td><td>any</td><td>custom input field allowing multiple line input</td></tr>
 </table>
 
 Further, the <strong>item</strong> context can contain criteria to filter the list of items. For example:
